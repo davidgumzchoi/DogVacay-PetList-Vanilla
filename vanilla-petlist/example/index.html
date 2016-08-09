@@ -5,10 +5,74 @@
     <title>Template</title>
 
     <!-- build:css -->
+    <style>
+      body {
+        background: #f6f6f1;
+        font-family: Helvetica,Arial,sans-serif;
+        font-size: 1rem;
+        margin: 0 auto;
+        width: 73.125em;
+      }
+
+      .label-container {
+        overflow: hidden;
+      }
+
+      .label-container .btn {
+        background-color: #fff;
+        border: 1px solid #69bbc0;
+        border-radius: 3px;
+        border-right-width: 0;
+        color: #0f748c;
+        display: block;
+        float: left;
+        font-weight: bold;
+        padding: 5px 20px;
+      }
+
+      .label-container .btn:hover {
+        cursor: pointer;
+      }
+
+      .label-container .btn.active {
+        background-color: #69bbc0;
+        color: #fff;
+      }
+
+      .label-container .btn:first-child {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+      .label-container .btn:last-child {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        border-right-width: 1px;
+      }
+
+      #content ul {
+        background-color: #fff;
+        border: 1px solid #dfe4e5;
+        border-radius: 4px;
+        margin-bottom: 15px;
+        padding: .9375rem;
+        width: 35em;
+      }
+
+      #content ul li {
+        list-style-type: none;
+      }
+    </style>
     <!-- endbuild -->
   </head>
   <body>
-    <div id="petList"></div>
+    <h1>DogVacay</h1>
+
+    <div class="label-container">
+      <a class="btn" id="boarding">Boarding</a>
+      <a class="btn" id="sitting">Sitting</a>
+    </div>
+
     <div id="content"></div>
 
     <!-- build:js -->
